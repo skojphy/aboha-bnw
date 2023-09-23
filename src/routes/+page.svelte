@@ -5,9 +5,9 @@
 	import { onMount } from 'svelte';
 
 	export let data;
-	$: ({ tutorials } = data);
+	$: ({ database } = data);
 
-	data.tutorials.forEach((item) => {
+	data.database.forEach((item) => {
 		console.log('>>>> ' + item.title);
 	});
 </script>
