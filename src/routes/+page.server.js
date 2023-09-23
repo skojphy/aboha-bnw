@@ -23,7 +23,8 @@ export const load = async function () {
 	// 	}
 	// });
 	// const loadData = JSON.parse(JSON.stringify(data));
-	// return {
-	// 	database: loadData
-	// };
+	return {
+		// database: loadData
+		database: 'data!'
+	};
 };

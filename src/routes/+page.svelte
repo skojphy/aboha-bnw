@@ -2,9 +2,9 @@
 	export let data;
 	$: ({ database } = data);
 
-	data.database.forEach((item) => {
-		console.log('>>>> ' + item.title);
-	});
+	// data.database.forEach((item) => {
+	// 	console.log('>>>> ' + item.title);
+	// });
 </script>
 
 <svelte:head>
