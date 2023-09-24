@@ -8,4 +8,4 @@ export function start_mongo() {
 	return client.connect();
 }
 
-export default client.db('mydb');
+export default client.db('Aboha');

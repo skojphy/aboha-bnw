@@ -2,9 +2,11 @@
 	export let data;
 	$: ({ database } = data);
 
-	// data.database.forEach((item) => {
-	// 	console.log('>>>> ' + item.title);
-	// });
+	let nick = '';
+	data.database.forEach((item) => {
+		console.log('>>>> 닉네임: ' + item.name);
+		nick = item.name;
+	});
 </script>
 
 <svelte:head>
@@ -14,6 +16,8 @@
 
 <section>
 	<h2>흑백전ㅋㅋ</h2>
+	<p>{nick}</p>
+	<button>클릭해봥</button>
 </section>
 
 <style>
