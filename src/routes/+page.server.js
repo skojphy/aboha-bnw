@@ -1,27 +1,27 @@
-import { database } from '$db/database';
-import { ObjectId } from 'mongodb';
+// import { database } from '$db/database';
+// import { ObjectId } from 'mongodb';
 
 export const load = async function () {
 	console.log('>>>> load start');
-	const data = await database
-		.find(
-			{},
-			{
-				projection: {
-					_id: String,
-					title: String,
-					state: Number
-				}
-			}
-		)
-		.toArray();
-	data.forEach((item) => {
-		console.log('>>>> title : ' + item.name);
-	});
-	const loadData = JSON.parse(JSON.stringify(data));
-	return {
-		database: loadData
-	};
+	// const data = await database
+	// 	.find(
+	// 		{},
+	// 		{
+	// 			projection: {
+	// 				_id: String,
+	// 				title: String,
+	// 				state: Number
+	// 			}
+	// 		}
+	// 	)
+	// 	.toArray();
+	// data.forEach((item) => {
+	// 	console.log('>>>> title : ' + item.name);
+	// });
+	// const loadData = JSON.parse(JSON.stringify(data));
+	// return {
+	// 	database: loadData
+	// };
 };
 
 // export const actions = {
