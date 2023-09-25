@@ -33,7 +33,7 @@
 			<img src={github} alt="GitHub" />
 		</a>
 	</div> -->
-	<h1>흑백전</h1>
+	<h1>흑백전 헤더</h1>
 </header>
 
 <style>
