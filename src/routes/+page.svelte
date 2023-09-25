@@ -1,24 +1,10 @@
 <script>
-	export let data;
-	$: ({ database } = data);
-
-	let nick = '';
-	data.database.forEach((item) => {
-		console.log('>>>> 닉네임: ' + item.name);
-		nick = item.name;
-	});
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="아보하 흑백전" />
-</svelte:head>
+<h1>가을운동회였던 흑백대전</h1>
+<section>참전률 1위 평점 어쩌구 들어갈 공간</section>
 
-<section>
-	<h2>흑백전ㅋㅋ</h2>
-	<p>{nick}</p>
-	<button>클릭해봥</button>
-</section>
+<a href="/reservation">나도 참전하기</a>
 
 <style>
 </style>
