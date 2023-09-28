@@ -19,7 +19,7 @@ export const actions = {
 		const getFormValues = (key) => values.get(key);
 
 		const submitData = {
-			// name: getFormValues('name'),
+			name: getFormValues('name'),
 			// phone: getFormValues('phone'),
 			// account: getFormValues('account'),
 			// arrival: getFormValues('arrival'),
