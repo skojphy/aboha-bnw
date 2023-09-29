@@ -126,7 +126,10 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>본인 의사 확인, 흑백전 행사 진행 및 서비스 제공, 긴급 사항 발생 시 비상 연락</td>
+							<td
+								>예금주 본인 확인, 흑백전 행사 진행 및 서비스 제공,<br />
+								긴급 사항 발생 시 비상 연락</td
+							>
 							<td>성명, 닉네임<br />휴대폰번호, 계좌번호</td>
 							<td rowspan="5" class="imp_txt"
 								><strong
@@ -177,7 +180,7 @@
 		margin: 0;
 		padding: 0;
 		color: #676767;
-		font-family: dotum, '돋움';
+		font-family: 'Noto Sans KR', sans-serif;
 		width: 100%;
 		border-collapse: collapse;
 		font-size: 11px;
