@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 
 	const now = new Date();
-	const eventDay = new Date('2023-10-08');
+	const eventDay = new Date('2023-10-08 16:30');
 	let diffTime = eventDay - now;
 
 	setInterval(() => {
@@ -52,15 +52,17 @@
 			<img class="poster" src={poster} alt="가을운동회였던 흑백대전" />
 		</h1>
 		<div class="info">
-			<div><span class="title">참전률</span><span class="content">1위</span></div>
+			<div class="tab"><span class="title">참전률</span><span class="content">1위</span></div>
 			<div class="line" />
-			<div>
+			<div class="tab">
 				<span class="title">평점</span><span class="content">5<span class="small">/5</span></span>
 			</div>
 			<div class="line" />
-			<div>
+			<div class="tab">
 				<span class="title">시작까지</span><span class="content"
-					>{hours}시간 {minutes}분 {seconds}초</span
+					>{hours}시간 {minutes > 9 ? minutes : '0' + minutes}분 {seconds > 9
+						? seconds
+						: '0' + seconds}초</span
 				>
 			</div>
 		</div>
@@ -112,6 +114,12 @@
 		display: grid;
 		grid-template-columns: 1fr 1px 1fr 1px 3.5fr;
 		justify-items: center;
+	}
+
+	.tab {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.line {
