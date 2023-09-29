@@ -8,13 +8,12 @@ export const actions = {
 
 		const submitData = {
 			name: getFormValues('name'),
-			// phone: getFormValues('phone'),
-			// account: getFormValues('account'),
-			// arrival: getFormValues('arrival'),
-			// leave: getFormValues('leave'),
-			// boardgame: getFormValues('boardgame'),
-			// message: getFormValues('message')
-			test: 'test'
+			phone: getFormValues('phone'),
+			account: getFormValues('account'),
+			arrival: getFormValues('arrival'),
+			leave: getFormValues('leave'),
+			boardgame: getFormValues('boardgame'),
+			message: getFormValues('message')
 		};
 
 		await database.insertOne(submitData);
