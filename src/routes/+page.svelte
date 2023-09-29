@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 
 	const now = new Date();
-	const eventDay = new Date('2023-10-08');
+	const eventDay = new Date('2023-10-08 16:30');
 	let diffTime = eventDay - now;
 
 	setInterval(() => {
