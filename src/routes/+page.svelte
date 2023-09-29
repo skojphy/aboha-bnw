@@ -110,7 +110,7 @@
 	.info {
 		width: 85vw;
 		display: grid;
-		grid-template-columns: 1fr 1px 1fr 1px 2.5fr;
+		grid-template-columns: 1fr 1px 1fr 1px 3.5fr;
 		justify-items: center;
 	}
 
@@ -124,8 +124,8 @@
 	}
 
 	.info .content {
-		font-size: 30px;
-		font-weight: 900;
+		font-size: 25px;
+		font-weight: 700;
 	}
 
 	.small {
