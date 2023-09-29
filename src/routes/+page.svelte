@@ -2,10 +2,18 @@
 	import './styles.css';
 	import poster from '$lib/images/poster.jpeg';
 	import { onMount } from 'svelte';
-	const today = new Date();
+
+	const now = new Date();
 	const eventDay = new Date('2023-10-08');
-	const diff = eventDay - today;
-	const diffDay = Math.floor(diff / (1000 * 60 * 60 * 24));
+	let diffTime = eventDay - now;
+
+	setInterval(() => {
+		diffTime = eventDay - new Date();
+	}, 1000);
+
+	$: hours = Math.floor(diffTime / (1000 * 60 * 60));
+	$: minutes = Math.floor((diffTime / (1000 * 60)) % 60);
+	$: seconds = Math.floor((diffTime / 1000) % 60);
 
 	onMount(() => {
 		const [lat, lng] = [37.504547, 126.897091];
@@ -44,12 +52,20 @@
 			<img class="poster" src={poster} alt="가을운동회였던 흑백대전" />
 		</h1>
 		<div class="info">
-			<p>참전률 1위</p>
-			<p>평점 5/5</p>
-			<p>D-{diffDay}</p>
+			<div><span class="title">참전률</span><span class="content">1위</span></div>
+			<div class="line" />
+			<div>
+				<span class="title">평점</span><span class="content">5<span class="small">/5</span></span>
+			</div>
+			<div class="line" />
+			<div>
+				<span class="title">시작까지</span><span class="content"
+					>{hours}시간 {minutes}분 {seconds}초</span
+				>
+			</div>
 		</div>
 
-		<div id="map" style="width:80%;height:300px;" />
+		<div id="map" />
 
 		<a href="/reservation">나도 참전하기</a>
 	</div>
@@ -73,8 +89,8 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height: 100%;
+		width: 100vw;
+		height: 100vh;
 		background-image: url('../lib/images/poster.jpeg');
 		background-size: cover;
 		filter: blur(20px);
@@ -82,17 +98,57 @@
 
 	.container {
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	.poster {
-		width: 80%;
+		width: 85vw;
+	}
+
+	.info {
+		width: 85vw;
+		display: grid;
+		grid-template-columns: 1fr 1px 1fr 1px 2.5fr;
+		justify-items: center;
+	}
+
+	.line {
+		width: 1px;
+		background-color: white;
+	}
+
+	.info .title {
+		display: block;
+	}
+
+	.info .content {
+		font-size: 30px;
+		font-weight: 900;
+	}
+
+	.small {
+		font-size: 15px;
+		font-weight: 400;
+	}
+
+	#map {
+		width: 85vw;
+		height: 60vw;
+		margin: 40px;
 	}
 
 	a {
 		display: block;
-		width: 80%;
-		height: 50px;
+		width: 85vw;
+		height: 70px;
 		border-radius: 30px;
 		background-color: white;
+		text-align: center;
+		font-size: 25px;
+		color: black;
+		font-weight: 700;
+		line-height: 70px;
 	}
 </style>
