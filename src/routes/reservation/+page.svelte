@@ -1,5 +1,20 @@
 <script>
 	import { enhance } from '$app/forms';
+	const checked = [false, false, false, false, false];
+	const handleClick = (index) => {
+		checked[index] = !checked[index];
+	};
+
+	const handleSubmit = () => {
+		const allChecked = checked.every((value) => value);
+
+		if (!allChecked) {
+			window.alert('주의사항을 모두 확인해 주세요.');
+			const location = document.querySelector('#card' + checked.find((val) => false)).offsetTop;
+			window.scrollTo({ top: location, behavior: 'smooth' });
+		}
+		return allChecked;
+	};
 </script>
 
 <main>
@@ -11,7 +26,7 @@
 				<h2>신청 전 확인해 주세요.</h2>
 			</div>
 
-			<div class="card">
+			<div class="card" id="card0">
 				<div class="card-text">
 					<span class="title">흑백전은 팀전으로 진행돼요.</span>
 					<p class="desc">
@@ -20,10 +35,12 @@
 						<span>종료 시간은 추후 공지 예정이에요!</span>
 					</p>
 				</div>
-				<button>확인</button>
+				<button class={checked[0] ? 'checked' : 'not-checked'} on:click={() => handleClick(0)}
+					>확인</button
+				>
 			</div>
 
-			<div class="card">
+			<div class="card" id="card1">
 				<div class="card-text">
 					<span class="title">참전 비용은 5만 원이에요.</span>
 					<p class="desc">
@@ -31,10 +48,12 @@
 						<span>수집한 계좌번호는 일주일 내에 안전하게 파기할게요!</span>
 					</p>
 				</div>
-				<button>확인</button>
+				<button class={checked[1] ? 'checked' : 'not-checked'} on:click={() => handleClick(1)}
+					>확인</button
+				>
 			</div>
 
-			<div class="card">
+			<div class="card" id="card2">
 				<div class="card-text">
 					<span class="title">준비물도 잊지 말아 주세요.</span>
 					<p class="desc">
@@ -43,9 +62,11 @@
 						<span>선물을 스포하지 않도록 포장은 필수예요.</span>
 					</p>
 				</div>
-				<button>확인</button>
+				<button class={checked[2] ? 'checked' : 'not-checked'} on:click={() => handleClick(2)}
+					>확인</button
+				>
 			</div>
-			<div class="card">
+			<div class="card" id="card3">
 				<div class="card-text">
 					<span class="title">드레스코드도 있답니다.</span>
 					<p class="desc">
@@ -54,9 +75,11 @@
 						<span>어떤 팀인지는 철저히 비밀로 해 주세요!</span>
 					</p>
 				</div>
-				<button>확인</button>
+				<button class={checked[3] ? 'checked' : 'not-checked'} on:click={() => handleClick(3)}
+					>확인</button
+				>
 			</div>
-			<div class="card">
+			<div class="card" id="card4">
 				<div class="card-text">
 					<span class="title">보드게임 가져와 주세요.</span>
 					<p class="desc">
@@ -65,7 +88,9 @@
 						<span>부피와 무게를 고려해 챙겨와 주세요!</span>
 					</p>
 				</div>
-				<button>확인</button>
+				<button class={checked[4] ? 'checked' : 'not-checked'} on:click={() => handleClick(4)}
+					>확인</button
+				>
 			</div>
 		</div>
 	</section>
@@ -82,32 +107,38 @@
 					method="POST"
 					action="?/submitForm"
 					use:enhance={() => {
-						return async () => {
-							console.log('Submitted.');
+						if (!checked.every((value) => value)) return false;
+
+						return async ({ result }) => {
+							if (result.type === 'error') {
+								window.alert('잠시 후 다시 시도해 주세요.');
+							}
+							window.location.href = '/result';
 						};
 					}}
+					on:submit={handleSubmit}
 				>
 					<label>
 						이름이 뭐예요?
-						<input type="text" name="name" placeholder="본명(예금주 확인 용) / 닉네임" />
+						<input type="text" name="name" placeholder="본명(예금주 확인 용) / 닉네임" required />
 					</label>
 					<label>
 						전화번호 뭐예요?
 						<span>흑백전 종료 이후 삭제할게요!</span>
-						<input type="text" name="phone" placeholder="010-0000-0000" />
+						<input type="text" name="phone" placeholder="010-0000-0000" required />
 					</label>
 					<label>
 						계좌번호 뭐예요?
 						<span>흑백전 종료 이후 삭제할게요!</span>
-						<input type="text" name="account" placeholder="우리은행 1002044760137" />
+						<input type="text" name="account" placeholder="우리은행 1002044760137" required />
 					</label>
 					<label>
 						몇 시까지 오실 수 있죠?
-						<input type="text" name="arrival" placeholder="시작 시간 맞춰서, 17시요" />
+						<input type="text" name="arrival" placeholder="시작 시간 맞춰서, 17시요" required />
 					</label>
 					<label>
 						집에는 언제 가실 거예요?
-						<input type="text" name="leave" placeholder="밤샘 가능, 24시" />
+						<input type="text" name="leave" placeholder="밤샘 가능, 24시" required />
 					</label>
 
 					<div class="title">
@@ -136,7 +167,7 @@
 					/>
 
 					<label>
-						<input class="checkbox" type="checkbox" />
+						<input class="checkbox" type="checkbox" required />
 						개인정보 수집 및 이용에 동의합니다.
 					</label>
 
@@ -241,7 +272,7 @@
 	}
 
 	.card-text {
-		width: 80%;
+		width: 85%;
 		font-size: 16px;
 	}
 
@@ -250,10 +281,16 @@
 		height: 40px;
 		border-radius: 100%;
 		border: 1px solid white;
-		background-color: black;
-		color: white;
 		font-size: 13px;
 		word-wrap: normal;
+	}
+	.card button.checked {
+		background-color: white;
+		color: black;
+	}
+	.card button.not-checked {
+		background-color: black;
+		color: white;
 	}
 
 	.card-text .desc span {
