@@ -33,7 +33,7 @@
 			position: markerPosition
 		});
 		const content =
-			'<div class ="label" style="transform: translateY(-55px); background-color: black; padding: 2px 3px; border-radius: 8px;"><span class="left"></span><span class="center" style="color: white">4층 D2 파티룸!</span><span class="right"></span></div>';
+			'<div class ="label" style="transform: translateY(-55px); background-color: black; padding: 4px 8px; border-radius: 8px;"><span class="left"></span><span class="center" style="color: white">4층 D2 파티룸!</span><span class="right"></span></div>';
 
 		const customOverlay = new kakao.maps.CustomOverlay({
 			position: markerPosition,
@@ -145,15 +145,16 @@
 
 	.info .title {
 		display: block;
+		font-size: 15px;
 	}
 
 	.info .content {
-		font-size: 25px;
+		font-size: 23px;
 		font-weight: 700;
 	}
 
 	.small {
-		font-size: 15px;
+		font-size: 14px;
 		font-weight: 400;
 	}
 
