@@ -8,7 +8,7 @@
 		<div class="container">
 			<div class="title">
 				<p>잠깐, 멈춰!</p>
-				<h2>참전 신청 전에 확인해 주세요.</h2>
+				<h2>신청 전 확인해 주세요.</h2>
 			</div>
 
 			<div class="card">
@@ -58,7 +58,7 @@
 			</div>
 			<div class="card">
 				<div class="card-text">
-					<span class="title">보드게임이 있다면 가져와 주세요.</span>
+					<span class="title">보드게임 가져와 주세요.</span>
 					<p class="desc">
 						<span>이번 흑백전 장소에는 비치된 보겜이 없답니다.</span>
 						<span>함께 즐기고 싶은 보드게임이 있다면</span>
@@ -74,7 +74,7 @@
 		<div class="container">
 			<div class="title">
 				<p>키미노..나마에와..!</p>
-				<h2>개인정보 좀 털어 가겠습니다.</h2>
+				<h2>개인정보 좀 털어 갈게요.</h2>
 			</div>
 
 			<div class="wrapper">
@@ -89,7 +89,7 @@
 				>
 					<label>
 						이름이 뭐예요?
-						<input type="text" name="name" placeholder="본명(예금주 확인 용) / 아보하 닉네임" />
+						<input type="text" name="name" placeholder="본명(예금주 확인 용) / 닉네임" />
 					</label>
 					<label>
 						전화번호 뭐예요?
@@ -103,7 +103,7 @@
 					</label>
 					<label>
 						몇 시까지 오실 수 있죠?
-						<input type="text" name="arrival" placeholder="시작 시간 맞출 수 있어요, 17시요" />
+						<input type="text" name="arrival" placeholder="시작 시간 맞춰서, 17시요" />
 					</label>
 					<label>
 						집에는 언제 가실 거예요?
@@ -112,7 +112,7 @@
 
 					<div class="title">
 						<p>아, 맞다!</p>
-						<h2>가져오실 보드게임이 있나요?</h2>
+						<h2>가져올 보드게임이 있나요?</h2>
 					</div>
 					<textarea
 						name="boardgame"
@@ -124,7 +124,7 @@
 
 					<div class="title">
 						<p>이제 마지막이에요.</p>
-						<h2>사랑의 메시지 💌 남겨 주세요 😘</h2>
+						<h2>사랑의 메시지 써 주세요💌</h2>
 					</div>
 
 					<textarea
@@ -132,7 +132,7 @@
 						id=""
 						cols="30"
 						rows="10"
-						placeholder="사랑의 메시지, 바라는 점 등 뭐든 남겨 주세요!"
+						placeholder="사랑의 메시지, 바라는 점 등 뭐든!"
 					/>
 
 					<label>
@@ -156,8 +156,8 @@
 							<tbody>
 								<tr>
 									<td
-										>예금주 본인 확인, 흑백전 행사 진행 및 서비스 제공,<br />
-										긴급 사항 발생 시 비상 연락</td
+										>예금주 본인 확인, 참전 비용 입금 확인, 흑백전 행사 진행 및 서비스 제공, 긴급
+										사항 발생 시 비상 연락</td
 									>
 									<td>성명, 닉네임<br />휴대폰번호, 계좌번호</td>
 									<td rowspan="5" class="imp_txt"
@@ -186,12 +186,15 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
 		color: white;
+	}
+
+	section {
+		width: 100%;
 	}
 
 	.info {
@@ -214,13 +217,13 @@
 	}
 
 	.title p {
-		font-size: 25px;
+		font-size: 23px;
 		font-weight: 100;
 		margin: 5px 0;
 		word-spacing: -1px;
 	}
 	.title h2 {
-		font-size: 25px;
+		font-size: 23px;
 		font-weight: 400;
 		margin: 5px 0 15px 0;
 		word-spacing: -4px;
@@ -243,12 +246,14 @@
 	}
 
 	.card button {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		border-radius: 100%;
 		border: 1px solid white;
 		background-color: black;
 		color: white;
+		font-size: 13px;
+		word-wrap: normal;
 	}
 
 	.card-text .desc span {
