@@ -112,6 +112,10 @@
 		align-items: center;
 	}
 
+	h1 {
+		margin-bottom: 0;
+	}
+
 	.poster {
 		width: 85vw;
 	}
@@ -121,7 +125,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1px 1fr 1px 3fr;
 		justify-items: center;
-		margin: 20px 0;
+		margin: 15px 0;
 	}
 
 	.info2 p {
@@ -156,7 +160,7 @@
 	#map {
 		width: 85vw;
 		height: 60vw;
-		margin: 40px;
+		margin: 25px;
 	}
 
 	a {
