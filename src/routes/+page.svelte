@@ -52,7 +52,9 @@
 			<img class="poster" src={poster} alt="가을운동회였던 흑백대전" />
 		</h1>
 		<div class="info">
-			<div class="tab"><span class="title">참전률</span><span class="content">1위</span></div>
+			<div class="tab">
+				<span class="title">참전률</span><span class="content">1<span class="small">위</span></span>
+			</div>
 			<div class="line" />
 			<div class="tab">
 				<span class="title">평점</span><span class="content">5<span class="small">/5</span></span>
@@ -60,11 +62,16 @@
 			<div class="line" />
 			<div class="tab">
 				<span class="title">시작까지</span><span class="content"
-					>{hours}시간 {minutes > 9 ? minutes : '0' + minutes}분 {seconds > 9
-						? seconds
-						: '0' + seconds}초</span
+					>{hours}<span class="small">시간</span>
+					{minutes > 9 ? minutes : '0' + minutes}<span class="small">분</span>
+					{seconds > 9 ? seconds : '0' + seconds}<span class="small">초</span></span
 				>
 			</div>
+		</div>
+
+		<div class="info2">
+			<p>일시 ㅣ 2023년 10월 8일 16시 30분</p>
+			<p>장소 ㅣ 서울 영등포구 도신로 36, 4층 D2파티룸</p>
 		</div>
 
 		<div id="map" />
@@ -112,8 +119,13 @@
 	.info {
 		width: 85vw;
 		display: grid;
-		grid-template-columns: 1fr 1px 1fr 1px 3.5fr;
+		grid-template-columns: 1fr 1px 1fr 1px 3fr;
 		justify-items: center;
+		margin: 20px 0;
+	}
+
+	.info2 p {
+		margin: 5px 0;
 	}
 
 	.tab {
@@ -150,13 +162,13 @@
 	a {
 		display: block;
 		width: 85vw;
-		height: 70px;
+		height: 50px;
 		border-radius: 30px;
 		background-color: white;
 		text-align: center;
-		font-size: 25px;
+		font-size: 15px;
 		color: black;
 		font-weight: 700;
-		line-height: 70px;
+		line-height: 50px;
 	}
 </style>
