@@ -166,11 +166,6 @@
 						placeholder="사랑의 메시지, 바라는 점 등 뭐든!"
 					/>
 
-					<label>
-						<input class="checkbox" type="checkbox" required />
-						개인정보 수집 및 이용에 동의합니다.
-					</label>
-
 					<details>
 						<summary>개인정보 수집 및 이용 내용</summary>
 						<table>
@@ -204,6 +199,11 @@
 							</tbody>
 						</table>
 					</details>
+
+					<label>
+						<input class="checkbox" type="checkbox" required />
+						<p class="checkbox">개인정보 수집 및 이용에 동의합니다.</p>
+					</label>
 
 					<button type="submit">신청 완료하기</button>
 				</form>
@@ -255,7 +255,7 @@
 	}
 	.title h2 {
 		font-size: 23px;
-		font-weight: 400;
+		font-weight: 600;
 		margin: 0 0 15px 0;
 		word-spacing: -4px;
 	}
@@ -269,6 +269,10 @@
 		align-items: center;
 		margin: 20px 0;
 		padding: 18px;
+	}
+
+	.card .title {
+		font-weight: 600;
 	}
 
 	.card-text {
@@ -293,11 +297,16 @@
 		color: white;
 	}
 
+	.desc {
+		margin: 10px 0;
+	}
+
 	.card-text .desc span {
 		display: inline-block;
 		font-size: 14px;
 		font-weight: 100;
 		word-break: keep-all;
+		line-height: 1.4;
 	}
 
 	label {
@@ -334,7 +343,7 @@
 		height: 200px;
 		box-sizing: border-box;
 		margin: 5px 0 20px 0;
-		border-radius: 30px;
+		border-radius: 20px;
 		padding: 15px;
 	}
 	input.checkbox {
@@ -342,6 +351,16 @@
 		width: 15px;
 		height: 15px;
 		accent-color: black;
+		position: relative;
+		top: 3px;
+	}
+	p.checkbox {
+		display: inline-block;
+		margin-left: 5px;
+	}
+
+	summary {
+		font-size: 13px;
 	}
 
 	table {
