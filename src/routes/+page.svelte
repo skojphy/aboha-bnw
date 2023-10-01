@@ -69,6 +69,11 @@
 			</div>
 		</div>
 
+		<div class="info2">
+			<p>일시 ㅣ 2023년 10월 8일 16시 30분</p>
+			<p>장소 ㅣ 서울 영등포구 도신로 36, 4층 D2파티룸</p>
+		</div>
+
 		<div id="map" />
 
 		<a href="/reservation">나도 참전하기</a>
@@ -116,6 +121,11 @@
 		display: grid;
 		grid-template-columns: 1fr 1px 1fr 1px 3fr;
 		justify-items: center;
+		margin: 20px 0;
+	}
+
+	.info2 p {
+		margin: 5px 0;
 	}
 
 	.tab {
