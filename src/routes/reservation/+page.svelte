@@ -241,7 +241,7 @@
 	}
 
 	.card-text {
-		width: 80%;
+		width: 85%;
 		font-size: 16px;
 	}
 
