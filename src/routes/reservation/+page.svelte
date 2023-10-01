@@ -250,13 +250,13 @@
 	.title p {
 		font-size: 23px;
 		font-weight: 100;
-		margin: 5px 0;
+		margin: 0;
 		word-spacing: -1px;
 	}
 	.title h2 {
 		font-size: 23px;
 		font-weight: 400;
-		margin: 5px 0 15px 0;
+		margin: 0 0 15px 0;
 		word-spacing: -4px;
 	}
 
