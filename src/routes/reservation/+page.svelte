@@ -257,7 +257,7 @@
 		font-size: 23px;
 		font-weight: 600;
 		margin: 0 0 15px 0;
-		word-spacing: -4px;
+		word-spacing: -3px;
 	}
 
 	.card {
@@ -328,6 +328,7 @@
 		margin: 5px 0 20px 0;
 		border-radius: 30px;
 		padding: 15px;
+		font-size: 16px;
 	}
 
 	input::placeholder,
@@ -344,8 +345,11 @@
 		box-sizing: border-box;
 		margin: 5px 0 20px 0;
 		border-radius: 20px;
-		padding: 15px;
+		padding: 16px;
+		font-size: 15px;
+		font-family: 'Noto Sans KR';
 	}
+
 	input.checkbox {
 		display: inline;
 		width: 15px;
@@ -374,6 +378,10 @@
 		font-size: 11px;
 		border: 1px solid #dbdbdb;
 		margin: 10px 0;
+	}
+
+	td {
+		padding: 5px;
 	}
 
 	form button {

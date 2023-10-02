@@ -11,8 +11,8 @@
 	<p>
 		쌈장 개인 프로필 <span class="bold">카카오페이</span> 혹은<br />
 		<span class="bold">1002-044-760137 우리은행</span>으로<br />
-		5만 원을 입금해 주시면 정말 신청 완료!<br />
-		<span class="bold">10월 8일 16시 30분에 만나요!</span><br />
+		5만 원을 입금해 주시면 정말 신청 완료!<br /><br />
+		<span class="bold bye">10월 8일 16시 30분에 만나요!</span><br />
 	</p>
 
 	<img class="poster" src={poster} alt="가을운동회였던 흑백대전" />
@@ -58,6 +58,10 @@
 
 	.bold {
 		font-weight: 700;
+	}
+
+	.bye {
+		font-size: 18px;
 	}
 
 	footer {
