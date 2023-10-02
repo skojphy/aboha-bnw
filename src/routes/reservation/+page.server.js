@@ -13,7 +13,8 @@ export const actions = {
 			arrival: getFormValues('arrival'),
 			leave: getFormValues('leave'),
 			boardgame: getFormValues('boardgame'),
-			message: getFormValues('message')
+			message: getFormValues('message'),
+			timeStamp: new Date().toLocaleString('ko-KR')
 		};
 
 		await database.insertOne(submitData);
