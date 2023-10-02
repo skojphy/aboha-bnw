@@ -58,7 +58,7 @@
 					<span class="title">준비물도 잊지 말아 주세요.</span>
 					<p class="desc">
 						<span>정모 국룰 이벤트, 쓸데없는 선물 교환식!</span>
-						<span>5천원 이하의 쓸데없는 선물을 준비해 주세요.</span>
+						<span>5천 원 이하의 쓸데없는 선물을 준비해 주세요.</span>
 						<span>선물을 스포하지 않도록 포장은 필수예요.</span>
 					</p>
 				</div>
@@ -68,10 +68,10 @@
 			</div>
 			<div class="card" id="card3">
 				<div class="card-text">
-					<span class="title">드레스코드도 있답니다.</span>
+					<span class="title">드레스 코드도 있답니다.</span>
 					<p class="desc">
-						<span>팀에 따라 흰색, 검은색 상의를 입어주세요.</span>
-						<span>팀은 흑백전 3일 전에 문자로 알려드릴게요!</span>
+						<span>팀에 따라 흰색, 검은색 상의를 입어 주세요.</span>
+						<span>팀은 흑백전 3일 전에 문자로 알려 드릴게요!</span>
 						<span>어떤 팀인지는 철저히 비밀로 해 주세요!</span>
 					</p>
 				</div>
@@ -176,7 +176,7 @@
 							>
 							<thead>
 								<tr>
-									<th scope="col">목적</th><th scope="col">항목</th><th scope="col">보유기간</th>
+									<th scope="col">목적</th><th scope="col">항목</th><th scope="col">보유 기간</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -194,7 +194,7 @@
 								</tr>
 								<tr>
 									<td>부정 이용 방지, 비인가 사용 방지</td>
-									<td>방문일시, 서비스 이용 기록 및 기기정보 </td>
+									<td>방문 일시, 서비스 이용 기록 및 기기 정보 </td>
 								</tr>
 							</tbody>
 						</table>
@@ -285,8 +285,10 @@
 		height: 40px;
 		border-radius: 100%;
 		border: 1px solid white;
-		font-size: 13px;
+		font-size: 12px;
 		word-wrap: normal;
+		word-spacing: -2px;
+		font-weight: 100;
 	}
 	.card button.checked {
 		background-color: white;
