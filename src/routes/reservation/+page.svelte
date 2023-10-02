@@ -285,8 +285,10 @@
 		height: 40px;
 		border-radius: 100%;
 		border: 1px solid white;
-		font-size: 13px;
+		font-size: 12px;
 		word-wrap: normal;
+		word-spacing: -2px;
+		font-weight: 100;
 	}
 	.card button.checked {
 		background-color: white;
