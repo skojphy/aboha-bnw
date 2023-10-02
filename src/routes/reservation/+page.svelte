@@ -257,7 +257,7 @@
 		font-size: 23px;
 		font-weight: 600;
 		margin: 0 0 15px 0;
-		word-spacing: -4px;
+		word-spacing: -3px;
 	}
 
 	.card {
