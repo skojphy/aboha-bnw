@@ -71,12 +71,17 @@
 
 		<div class="info2">
 			<p>일시 ㅣ 2023년 10월 8일 16시 30분</p>
-			<p>장소 ㅣ 서울 영등포구 도신로 36, 4층 D2파티룸</p>
+			<p>
+				장소 ㅣ <a
+					href="https://map.kakao.com/link/to/D2%ED%8C%8C%ED%8B%B0%EB%A3%B8,37.504547,126.897091"
+					>서울 영등포구 도신로 36, 4층 D2파티룸</a
+				>
+			</p>
 		</div>
 
 		<div id="map" />
 
-		<a href="/reservation">나도 참전하기</a>
+		<a class="link" href="/reservation">나도 참전하기</a>
 	</div>
 </main>
 
@@ -164,7 +169,7 @@
 		margin: 25px;
 	}
 
-	a {
+	.link {
 		display: block;
 		width: 85vw;
 		height: 50px;
@@ -175,5 +180,9 @@
 		color: black;
 		font-weight: 700;
 		line-height: 50px;
+	}
+
+	.info2 a {
+		color: white;
 	}
 </style>
