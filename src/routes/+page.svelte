@@ -33,7 +33,7 @@
 			position: markerPosition
 		});
 		const content =
-			'<div class ="label" style="transform: translateY(-55px); background-color: black; padding: 4px 8px; border-radius: 8px;"><span class="left"></span><span class="center" style="color: white">4층 D2 파티룸!</span><span class="right"></span></div>';
+			'<div class ="label" style="transform: translateY(-57px); background-color: black; padding: 4px 8px; border-radius: 8px;"><span class="left"></span><span class="center" style="color: white"><a style="color:white" href="https://map.kakao.com/link/to/D2%ED%8C%8C%ED%8B%B0%EB%A3%B8,37.504547,126.897091">4층 D2 파티룸!</a></span><span class="right"></span></div>';
 
 		const customOverlay = new kakao.maps.CustomOverlay({
 			position: markerPosition,
