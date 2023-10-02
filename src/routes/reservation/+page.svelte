@@ -380,6 +380,10 @@
 		margin: 10px 0;
 	}
 
+	td {
+		padding: 5px;
+	}
+
 	form button {
 		width: 100%;
 		height: 50px;
