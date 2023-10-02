@@ -328,6 +328,7 @@
 		margin: 5px 0 20px 0;
 		border-radius: 30px;
 		padding: 15px;
+		font-size: 16px;
 	}
 
 	input::placeholder,
@@ -344,8 +345,11 @@
 		box-sizing: border-box;
 		margin: 5px 0 20px 0;
 		border-radius: 20px;
-		padding: 15px;
+		padding: 16px;
+		font-size: 15px;
+		font-family: 'Noto Sans KR';
 	}
+
 	input.checkbox {
 		display: inline;
 		width: 15px;
