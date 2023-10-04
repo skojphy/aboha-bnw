@@ -3,9 +3,9 @@
 </script>
 
 <main>
-	<h1>{data.code.id}</h1>
-	<div>{data.code.desc}</div>
-	<div>{data.code.isSuccess}</div>
+	<h1>큐알지옥{data.code.no}</h1>
+	<p>id: {data.code.id}</p>
+	<p>isSuccess: {data.code.isSuccess}</p>
 </main>
 
 <style>
@@ -18,5 +18,7 @@
 		box-sizing: border-box;
 		background-color: white;
 		color: black;
+		text-align: center;
+		font-size: 30px;
 	}
 </style>
