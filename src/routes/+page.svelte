@@ -81,7 +81,7 @@
 
 		<div id="map" />
 
-		<a class="link" href="">나도 참전하기</a>
+		<button class="link" disabled>신청이 마감되었습니다.</button>
 	</div>
 </main>
 
@@ -179,7 +179,6 @@
 		font-size: 15px;
 		color: black;
 		font-weight: 700;
-		line-height: 50px;
 	}
 
 	.info2 a {
