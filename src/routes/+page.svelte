@@ -81,7 +81,7 @@
 
 		<div id="map" />
 
-		<a class="link" href="/reservation">나도 참전하기</a>
+		<a class="link" href="">나도 참전하기</a>
 	</div>
 </main>
 
@@ -174,7 +174,7 @@
 		width: 85vw;
 		height: 50px;
 		border-radius: 30px;
-		background-color: white;
+		background-color: gray;
 		text-align: center;
 		font-size: 15px;
 		color: black;

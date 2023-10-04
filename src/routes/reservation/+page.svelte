@@ -205,7 +205,7 @@
 						<p class="checkbox">개인정보 수집 및 이용에 동의합니다.</p>
 					</label>
 
-					<button type="submit">신청 완료하기</button>
+					<button type="submit" disabled>신청이 마감되었습니다.</button>
 				</form>
 			</div>
 		</div>
@@ -392,7 +392,7 @@
 		width: 100%;
 		height: 50px;
 		border-radius: 30px;
-		background-color: white;
+		background-color: gray;
 		text-align: center;
 		font-size: 15px;
 		color: black;
