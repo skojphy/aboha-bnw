@@ -93,7 +93,6 @@
 				}}
 			>
 				<input type="hidden" name="no" value={data.code.no} />
-				<input type="hidden" name="userAgent" value={navigator.userAgent} />
 				<div class="nickname">
 					<input type="text" name="name" placeholder="닉네임" required />
 					<button type="submit">제출</button>

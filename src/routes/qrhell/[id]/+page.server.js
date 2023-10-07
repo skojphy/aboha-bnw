@@ -21,7 +21,6 @@ export const actions = {
 		const submitData = {
 			name: getFormValues('name'),
 			no: getFormValues('no'),
-			userAgent: getFormValues('userAgent'),
 			timeStamp: new Date().toLocaleString('ko-KR')
 		};
 
