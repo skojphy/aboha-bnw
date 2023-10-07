@@ -88,7 +88,7 @@
 						if (result.type === 'error') {
 							window.alert('잠시 후 다시 시도해 주세요.');
 						}
-						window.alert('제출 완료! 다른 큐알코드를 찾아 주세요.');
+						window.alert('제출 완료! 화면을 캡쳐한 뒤 다른 큐알코드를 찾아 주세요.');
 					};
 				}}
 			>
