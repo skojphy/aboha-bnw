@@ -13,11 +13,11 @@
 <main>
 	<h1 class="visually-hidden">큐알지옥 {data.code.no}</h1>
 	{#if data.code.no < 15}
-		<img src={`/src/lib/images/qr/success${data.code.no}.jpeg`} alt="보물찾기 성공" />
+		<img src={`%sveltekit.assets%/qr/success${data.code.no}.jpeg`} alt="보물찾기 성공" />
 	{:else if data.code.no < 20}
-		<img src={`/src/lib/images/qr/fail${data.code.no - 14}.jpeg`} alt="보물찾기 실패" />
-	{:else}
-		<img src={'/src/lib/images/qr/king.jpeg'} alt="해적왕" />
+		<img src={`%sveltekit.assets%/qr/fail${data.code.no - 14}.jpeg`} alt="보물찾기 실패" />
+	{:else if data.code.no === 20}
+		<img src={'%sveltekit.assets%/qr/king.jpeg'} alt="해적왕" />
 	{/if}
 
 	<p>
