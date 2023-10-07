@@ -2,181 +2,181 @@ export const codes = [
 	{
 		no: 1,
 		id: 'hrjdjf07',
-		desc: 'hrjdjf07!',
-		isSuccess: true
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 2,
 		id: 'dikur0ug',
-		desc: 'dikur0ug!',
-		isSuccess: true
+		url: 'success2',
+		status: 'success'
 	},
 	{
 		no: 3,
 		id: 'ikxxb0eh',
-		desc: 'ikxxb0eh!',
-		isSuccess: true
+		url: 'success3',
+		status: 'success'
 	},
 	{
 		no: 4,
 		id: 'e3nirieb',
-		desc: 'e3nirieb!',
-		isSuccess: true
+		url: 'success4',
+		status: 'success'
 	},
 	{
 		no: 5,
 		id: 'roxwxxbv',
-		desc: 'roxwxxbv!',
-		isSuccess: true
+		url: 'success5',
+		status: 'success'
 	},
 	{
 		no: 6,
 		id: 'sbg239tj',
-		desc: 'sbg239tj!',
-		isSuccess: true
+		url: 'success6',
+		status: 'success'
 	},
 	{
 		no: 7,
 		id: 'ruhie73y',
-		desc: 'ruhie73y!',
-		isSuccess: true
+		url: 'success7',
+		status: 'success'
 	},
 	{
 		no: 8,
 		id: '6wq3i6ki',
-		desc: '6wq3i6ki!',
-		isSuccess: true
+		url: 'success8',
+		status: 'success'
 	},
 	{
 		no: 9,
 		id: '932db3g1',
-		desc: '932db3g1!',
-		isSuccess: true
+		url: 'success9',
+		status: 'success'
 	},
 	{
 		no: 10,
 		id: 'yxn57tl3',
-		desc: 'yxn57tl3!',
-		isSuccess: true
+		url: 'success10',
+		status: 'success'
 	},
 	{
 		no: 11,
 		id: 'fnwjkq91',
-		desc: 'fnwjkq91!',
-		isSuccess: true
+		url: 'success11',
+		status: 'success'
 	},
 	{
 		no: 12,
 		id: 'qgdswryt',
-		desc: 'qgdswryt!',
-		isSuccess: true
+		url: 'success12',
+		status: 'success'
 	},
 	{
 		no: 13,
 		id: 'did8mck5',
-		desc: 'did8mck5!',
-		isSuccess: true
+		url: 'success13',
+		status: 'success'
 	},
 	{
 		no: 14,
 		id: 'o10gp5c8',
-		desc: 'o10gp5c8!',
-		isSuccess: true
+		url: 'success14',
+		status: 'success'
 	},
 	{
 		no: 15,
 		id: 'o9zaqg43',
-		desc: 'o9zaqg43!',
-		isSuccess: true
+		url: 'fail1',
+		status: 'fail'
 	},
 	{
 		no: 16,
 		id: 'wyhge7zc',
-		desc: 'wyhge7zc!',
-		isSuccess: false
+		url: 'fail2',
+		status: 'fail'
 	},
 	{
 		no: 17,
 		id: '3xdhshpp',
-		desc: '3xdhshpp!',
-		isSuccess: false
+		url: 'fail3',
+		status: 'fail'
 	},
 	{
 		no: 18,
 		id: 'qjaa506i',
-		desc: 'qjaa506i!',
-		isSuccess: false
+		url: 'fail4',
+		status: 'fail'
 	},
 	{
 		no: 19,
 		id: '6v5ja1z8',
-		desc: '6v5ja1z8!',
-		isSuccess: false
+		url: 'fail5',
+		status: 'fail'
 	},
 	{
 		no: 20,
 		id: '3ws4m07z',
-		desc: '3ws4m07z!',
-		isSuccess: false
+		url: 'king',
+		status: 'king'
 	},
 	{
 		no: 21,
 		id: 'fnk2sszx',
-		desc: 'fnk2sszx!',
-		isSuccess: true
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 22,
 		id: 'wtjaz82t',
-		desc: 'wtjaz82t!',
-		isSuccess: true
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 23,
 		id: 'fk443xoh',
-		desc: 'fk443xoh!',
-		isSuccess: true
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 24,
 		id: '2mihec5v',
-		desc: '2mihec5v!',
-		isSuccess: true
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 25,
 		id: '8fzbrovf',
-		desc: '8fzbrovf!',
-		isSuccess: true
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 26,
 		id: 'f8v4hdni',
-		desc: 'f8v4hdni!',
-		isSuccess: true
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 27,
 		id: 'juvdw2n0',
-		desc: 'juvdw2n0!',
-		isSuccess: false
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 28,
 		id: 'x1hcvjl7',
-		desc: 'x1hcvjl7!',
-		isSuccess: false
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 29,
 		id: 'scd316k4',
-		desc: 'scd316k4!',
-		isSuccess: false
+		url: 'success1',
+		status: 'success'
 	},
 	{
 		no: 30,
 		id: 'qk2ztfwd',
-		desc: 'qk2ztfwd!',
-		isSuccess: false
+		url: 'success1',
+		status: 'success'
 	}
 ];
