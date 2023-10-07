@@ -1,9 +1,13 @@
 import { error } from '@sveltejs/kit';
-import { codes } from '../qrcodes.js';
 import { qr } from '$db/qr';
 
-export function load({ params }) {
-	const code = codes.find((code) => code.id === params.id);
+export function load() {
+	const code = {
+		no: 20,
+		id: '3ws4m07z',
+		url: 'king',
+		status: 'king'
+	};
 
 	if (!code) throw error(404);
 
