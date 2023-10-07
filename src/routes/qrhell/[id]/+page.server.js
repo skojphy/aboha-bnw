@@ -21,7 +21,7 @@ export const actions = {
 		const submitData = {
 			name: getFormValues('name'),
 			no: getFormValues('no'),
-			timeStamp: new Date().toLocaleString('ko-KR')
+			timeStamp: new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })
 		};
 
 		await qr.insertOne(submitData);

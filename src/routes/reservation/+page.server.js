@@ -14,7 +14,7 @@ export const actions = {
 			leave: getFormValues('leave'),
 			boardgame: getFormValues('boardgame'),
 			message: getFormValues('message'),
-			timeStamp: new Date().toLocaleString('ko-KR')
+			timeStamp: new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })
 		};
 
 		await database.insertOne(submitData);
