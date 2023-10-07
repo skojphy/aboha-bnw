@@ -3,9 +3,9 @@ import { qr } from '$db/qr';
 
 export function load() {
 	const code = {
-		no: 4,
-		id: 'e3nirieb',
-		url: 'success4',
+		no: 14,
+		id: 'o10gp5c8',
+		url: 'success14',
 		status: 'success'
 	};
 
