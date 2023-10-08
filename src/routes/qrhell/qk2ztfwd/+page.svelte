@@ -31,10 +31,13 @@
 		text-align: center;
 		font-size: 30px;
 	}
+	h1 {
+		font-weight: 700;
+	}
 	p {
 		margin: 30px;
-		font-size: 18px;
+		font-size: 16px;
 		text-align: left;
-		font-weight: 700;
+		font-weight: 400;
 	}
 </style>
