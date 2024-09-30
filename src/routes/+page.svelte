@@ -44,6 +44,8 @@
 		marker.setMap(map);
 		customOverlay.setMap(map);
 	});
+
+	const isInSchedule = hours >= 0;
 </script>
 
 <main>
@@ -62,9 +64,11 @@
 			<div class="line" />
 			<div class="tab">
 				<span class="title">시작까지</span><span class="content"
-					>{hours}<span class="small">시간</span>
-					{minutes > 9 ? minutes : '0' + minutes}<span class="small">분</span>
-					{seconds > 9 ? seconds : '0' + seconds}<span class="small">초</span></span
+					>{Math.max(hours, 0)}<span class="small">시간</span>
+					{isInSchedule ? (minutes > 9 ? minutes : '0' + minutes) : '0'}<span class="small">분</span
+					>
+					{isInSchedule ? (seconds > 9 ? seconds : '0' + seconds) : '0'}<span class="small">초</span
+					></span
 				>
 			</div>
 		</div>
