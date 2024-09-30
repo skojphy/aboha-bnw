@@ -85,7 +85,7 @@
 
 		<div id="map" />
 
-		<button class="link" disabled>신청이 마감되었습니다.</button>
+		<a class="link" href="/reservation">나도 참전하기</a>
 	</div>
 </main>
 
